@@ -245,7 +245,7 @@ h6 {
   display: flex;
   flex-direction: column;
   border: 1px solid #fff;
-  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.9);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
   padding-bottom: 5px;
   border-radius: 5px;
   width: 25%;
@@ -254,7 +254,8 @@ h6 {
 .portfoliosItemPicContainer {
   border-radius: 5px 5px 0 0;
   padding: 2px;
-  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+    inset 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .portfoliosItemPic {
@@ -359,7 +360,6 @@ h6 {
 }
 
 @media (min-width: 756px) {
-
   .container {
     margin: 0 auto;
     padding: 0;
@@ -414,7 +414,7 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 14px;
+    margin-top: 12px;
   }
 
   .icon {
@@ -608,7 +608,8 @@ h6 {
   .portfoliosItemPicContainer {
     border-radius: 10px 10px 0 0;
     padding: 5px;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+      inset 1px 1px 5px rgba(0, 0, 0, 0.5);
   }
 
   .portfoliosItemPic {
@@ -711,5 +712,4 @@ h6 {
     border-radius: 2px;
     padding: 150px;
   }
-
 }
