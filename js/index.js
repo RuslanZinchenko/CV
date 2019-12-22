@@ -1,33 +1,36 @@
-const modalSection = document.querySelector('.modal');
-const modalImg = document.querySelector('.modal-img');
-const container = document.querySelector('.container');
+const modalSection = document.querySelector(".modal");
+const modalImg = document.querySelector(".modal-img");
+const container = document.querySelector(".container");
 
-container.addEventListener('click', openModal);
-window.addEventListener('keydown', closeModal);
-modalSection.addEventListener('click', closeModalAgain);
+container.addEventListener("click", openModal);
+window.addEventListener("keydown", closeModal);
+modalSection.addEventListener("click", closeModalAgain);
 
 function closeModal(e) {
-  if (e.key === 'Escape') {
-    modalSection.classList.add('modal-hidden');
+  if (e.key === "Escape") {
+    modalSection.classList.add("modal-hidden");
   }
 }
 
 function closeModalAgain(e) {
-  if (e.target.classList.contains('modal')) {
-    modalSection.classList.add('modal-hidden');
+  if (e.target.classList.contains("modal")) {
+    modalSection.classList.add("modal-hidden");
   }
+}
+
+function choosePicture(target) {
+  modalImg.innerHTML = target.outerHTML;
 }
 
 function openModal(e) {
   const target = e.target;
   choosePicture(target);
-  if (target.classList.contains('sidebar')) {
+  if (
+    target.classList.contains("sidebar") ||
+    target.classList.contains("content")
+  ) {
     return;
   } else {
-    modalSection.classList.remove('modal-hidden');
+    modalSection.classList.remove("modal-hidden");
   }
-}
- 
-function choosePicture(target) {
-  modalImg.innerHTML = target.outerHTML;
 }
