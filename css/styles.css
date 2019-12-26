@@ -37,6 +37,18 @@
   display: flex;
   font-size: 6px;
   font-weight: bold;
+  color: #fff;
+}
+
+.blue {
+  font-size: 6px;
+  font-weight: bold;
+}
+
+a {
+  color: rgb(28, 173, 192);
+  text-decoration: none;
+  display: block;
 }
 
 .contacts {
@@ -60,7 +72,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 .icon {
@@ -68,12 +80,6 @@
   width: 20px;
   height: auto;
   margin-right: 10px;
-}
-
-a {
-  color: rgb(28, 173, 192);
-  text-decoration: none;
-  display: block;
 }
 
 .content {
@@ -158,6 +164,12 @@ h3::after {
   padding: 5px 5px 8px 5px;
 }
 
+/* .experienceItem:hover, .experienceItemX:hover {
+  transform: translate(-10px, -10px);
+  transition-duration: 400ms;
+  transition-timing-function: linear;
+} */
+
 .experienceItemX {
   border-radius: 5px 20px;
   width: 49%;
@@ -194,6 +206,12 @@ h4 {
   border-radius: 5px;
   padding: 8px 0;
 }
+
+/* .skillsContainer:hover {
+  transform: translate(-10px, -10px);
+  transition-duration: 400ms;
+  transition-timing-function: linear;
+} */
 
 h5 {
   font-size: 5px;
@@ -251,11 +269,17 @@ h6 {
   width: 25%;
 }
 
+/* .portfoliosItem:hover {
+  transform: translate(-10px, -10px);
+  transition-duration: 400ms;
+  transition-timing-function: linear;
+  background-color: #fff;
+} */
+
 .portfoliosItemPicContainer {
   border-radius: 5px 5px 0 0;
   padding: 2px;
-  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
-    inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .portfoliosItemPic {
@@ -307,6 +331,16 @@ h6 {
   padding: 5px 5px 8px 5px;
 }
 
+/* .educationItemClone {
+  display: none;
+} */
+
+/* .educationItem:hover {
+  transform: translate(-10px, -10px);
+  transition-duration: 400ms;
+  transition-timing-function: linear;
+} */
+
 .educationTitle {
   background-color: rgb(73, 71, 71);
   border-radius: 50px 15px;
@@ -338,17 +372,17 @@ h6 {
   background-color: rgba(37, 45, 58, 0.7);
 }
 
-.modal-hidden {
+.modalHidden {
   display: none;
 }
 
-.modal-content {
+.modalContent {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 80%;
@@ -356,10 +390,103 @@ h6 {
   background-color: #ffffff;
   box-shadow: 0 4px 4px rgba(1, 2, 2, 0.2);
   border-radius: 2px;
-  padding: 150px;
+  /* padding: 150px; */
+}
+
+.modalImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modalInnerImg {
+  width: 100%;
+  height: auto;
+}
+
+.contactsTextBold {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contactsInfo {
+  width: 220px;
+  background: rgb(73, 71, 71);
+  border-radius: 10px;
+  padding: 20px 20px 40px;
+}
+
+.contactsInfo .iconContainer {
+  margin-top: 20px;
+}
+
+.contactsInfo img {
+  width: 40px;
+  height: auto;
+}
+
+.contactsInfo p {
+font-size: 14px;
+}
+
+.contactsInfo a {
+  font-size: 12px;
+}
+
+.experienceContainerStyle {
+  width: 200px;
+  border-radius: 5px 30px;
+}
+
+.experienceContainerStyle h4 {
+  font-size: 16px;
+}
+
+.experienceContainerStyle h5 {
+  font-size: 12px;
+  margin: 10px; 
+}
+
+.experienceContainerStyle p {
+  font-size: 12px;
+  margin: 10px; 
+}
+
+.skillsContainerStyle {
+  width: 240px;
+}
+
+.skillsContainerStyle h6 {
+  font-size: 16px;
+  padding: 20px;
+}
+
+.skillsContainerStyle p {
+  font-size: 10px;
+}
+
+.educationContainerStyle {
+  width: 200px;
+  border-radius: 30px 5px;
+}
+
+.educationContainerStyle h4 {
+  font-size: 16px;
+}
+
+.educationContainerStyle h5 {
+  font-size: 12px;
+  margin-top: 10px; 
+}
+
+.educationContainerStyle p {
+  font-size: 12px;
+  margin-top: 10px;
 }
 
 @media (min-width: 756px) {
+
   .container {
     margin: 0 auto;
     padding: 0;
@@ -391,6 +518,13 @@ h6 {
     display: flex;
     font-size: 14px;
     font-weight: bold;
+    color: #fff;
+  }
+
+  .blue {
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
   }
 
   .contacts {
@@ -414,7 +548,7 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 12px;
+    margin-top: 14px;
   }
 
   .icon {
@@ -512,6 +646,12 @@ h6 {
     padding: 10px 10px 20px 10px;
   }
 
+  .experienceItem:hover, .experienceItemX:hover {
+    transform: translate(-10px, -10px);
+    transition-duration: 400ms;
+    transition-timing-function: linear;
+  }
+
   .experienceItemX {
     border-radius: 15px 50px;
     width: 49%;
@@ -547,6 +687,12 @@ h6 {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
     border-radius: 15px;
     padding: 15px 0;
+  }
+
+  .skillsContainer:hover {
+    transform: translate(-10px, -10px);
+    transition-duration: 400ms;
+    transition-timing-function: linear;
   }
 
   h5 {
@@ -598,18 +744,24 @@ h6 {
   .portfoliosItem {
     display: flex;
     flex-direction: column;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
     padding-bottom: 10px;
     border-radius: 10px;
     width: 25%;
   }
 
+  .portfoliosItem:hover {
+    transform: translate(-10px, -10px);
+    transition-duration: 400ms;
+    transition-timing-function: linear;
+    background-color: #fff;
+  }
+
   .portfoliosItemPicContainer {
     border-radius: 10px 10px 0 0;
     padding: 5px;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
-      inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset 1px 1px 5px rgba(0, 0, 0, 0.5);
   }
 
   .portfoliosItemPic {
@@ -661,6 +813,12 @@ h6 {
     padding: 10px 10px 20px 10px;
   }
 
+  .educationItem:hover {
+    transform: translate(-10px, -10px);
+    transition-duration: 400ms;
+    transition-timing-function: linear;
+  }
+
   .educationTitle {
     background-color: rgb(73, 71, 71);
     border-radius: 50px 15px;
@@ -692,17 +850,17 @@ h6 {
     background-color: rgba(37, 45, 58, 0.7);
   }
 
-  .modal-hidden {
+  .modalHidden {
     display: none;
   }
 
-  .modal-content {
+  .modalContent {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     width: 80%;
@@ -710,6 +868,97 @@ h6 {
     background-color: #ffffff;
     box-shadow: 0 4px 4px rgba(1, 2, 2, 0.2);
     border-radius: 2px;
-    padding: 150px;
+    /* padding: 150px; */
   }
+
+  .modalImg {
+    padding: 60px;
+  }
+
+  .modalInnerImg {
+    width: 100%;
+    height: auto;
+  }
+  
+  .contactsTextBold {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .contactsInfo {
+    width: 400px;
+    background: rgb(73, 71, 71);
+    border-radius: 10px;
+    padding: 20px 20px 40px;
+  }
+  
+  .contactsInfo .iconContainer {
+    margin-top: 20px;
+  }
+  
+  .contactsInfo img {
+    width: 60px;
+    height: auto;
+  }
+  
+  .contactsInfo p {
+  font-size: 24px;
+  }
+  
+  .contactsInfo a {
+    font-size: 22px;
+  }
+  
+  .experienceContainerStyle {
+    width: 400px;
+    border-radius: 5px 30px;
+  }
+  
+  .experienceContainerStyle h4 {
+    font-size: 24px;
+  }
+  
+  .experienceContainerStyle h5 {
+    font-size: 18px;
+    margin: 20px; 
+  }
+  
+  .experienceContainerStyle p {
+    font-size: 16px;
+    margin: 20px; 
+  }
+  
+  .skillsContainerStyle {
+    width: 90%;
+  }
+  
+  .skillsContainerStyle h6 {
+    font-size: 24px;
+    padding: 30px;
+  }
+  
+  .skillsContainerStyle p {
+    font-size: 18px;
+    margin: 20px;
+  }
+  
+  .educationContainerStyle {
+    width: 400px;
+    border-radius: 40px 5px;
+  }
+  
+  .educationContainerStyle h4 {
+    font-size: 24px;
+  }
+  
+  .educationContainerStyle h5 {
+    font-size: 18px;
+    margin: 20px; 
+  }
+  
+  .educationContainerStyle p {
+    font-size: 16px;
+    margin: 20px;
+  }
+
 }
