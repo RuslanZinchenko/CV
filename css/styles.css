@@ -279,7 +279,8 @@ h6 {
 .portfoliosItemPicContainer {
   border-radius: 5px 5px 0 0;
   padding: 2px;
-  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+    inset 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .portfoliosItemPic {
@@ -363,6 +364,12 @@ h6 {
   margin-bottom: 4px;
 }
 
+.saveCV {
+  text-align: center;
+  font-size: 8px;
+  margin-top: 15px;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -408,6 +415,7 @@ h6 {
 .contactsTextBold {
   font-size: 14px;
   font-weight: 600;
+  line-height: 2;
 }
 
 .contactsInfo {
@@ -427,7 +435,7 @@ h6 {
 }
 
 .contactsInfo p {
-font-size: 14px;
+  font-size: 14px;
 }
 
 .contactsInfo a {
@@ -436,7 +444,8 @@ font-size: 14px;
 
 .experienceContainerStyle {
   width: 200px;
-  border-radius: 5px 30px;
+  border-radius: 10px 30px;
+  padding: 10px;
 }
 
 .experienceContainerStyle h4 {
@@ -445,12 +454,12 @@ font-size: 14px;
 
 .experienceContainerStyle h5 {
   font-size: 12px;
-  margin: 10px; 
+  margin: 10px;
 }
 
 .experienceContainerStyle p {
   font-size: 12px;
-  margin: 10px; 
+  margin: 10px;
 }
 
 .skillsContainerStyle {
@@ -464,11 +473,13 @@ font-size: 14px;
 
 .skillsContainerStyle p {
   font-size: 10px;
+  margin: 10px;
 }
 
 .educationContainerStyle {
   width: 200px;
-  border-radius: 30px 5px;
+  border-radius: 30px 10px;
+  padding: 10px;
 }
 
 .educationContainerStyle h4 {
@@ -477,16 +488,15 @@ font-size: 14px;
 
 .educationContainerStyle h5 {
   font-size: 12px;
-  margin-top: 10px; 
+  margin: 10px;
 }
 
 .educationContainerStyle p {
   font-size: 12px;
-  margin-top: 10px;
+  margin: 10px;
 }
 
 @media (min-width: 756px) {
-
   .container {
     margin: 0 auto;
     padding: 0;
@@ -548,7 +558,7 @@ font-size: 14px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 14px;
+    margin-top: 12px;
   }
 
   .icon {
@@ -646,7 +656,8 @@ font-size: 14px;
     padding: 10px 10px 20px 10px;
   }
 
-  .experienceItem:hover, .experienceItemX:hover {
+  .experienceItem:hover,
+  .experienceItemX:hover {
     transform: translate(-10px, -10px);
     transition-duration: 400ms;
     transition-timing-function: linear;
@@ -761,7 +772,8 @@ font-size: 14px;
   .portfoliosItemPicContainer {
     border-radius: 10px 10px 0 0;
     padding: 5px;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+      inset 1px 1px 5px rgba(0, 0, 0, 0.5);
   }
 
   .portfoliosItemPic {
@@ -841,6 +853,12 @@ font-size: 14px;
     margin-bottom: 10px;
   }
 
+  .saveCV {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
   .modal {
     position: fixed;
     top: 0;
@@ -876,89 +894,90 @@ font-size: 14px;
   }
 
   .modalInnerImg {
-    width: 100%;
+    width: 50%;
     height: auto;
   }
-  
+
   .contactsTextBold {
     font-size: 24px;
     font-weight: 600;
+    line-height: 1.5;
   }
-  
+
   .contactsInfo {
     width: 400px;
     background: rgb(73, 71, 71);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     padding: 20px 20px 40px;
   }
-  
+
   .contactsInfo .iconContainer {
     margin-top: 20px;
   }
-  
+
   .contactsInfo img {
     width: 60px;
     height: auto;
   }
-  
+
   .contactsInfo p {
-  font-size: 24px;
+    font-size: 24px;
   }
-  
+
   .contactsInfo a {
     font-size: 22px;
   }
-  
+
   .experienceContainerStyle {
     width: 400px;
-    border-radius: 5px 30px;
+    border-radius: 10px 30px;
   }
-  
+
   .experienceContainerStyle h4 {
     font-size: 24px;
   }
-  
+
   .experienceContainerStyle h5 {
-    font-size: 18px;
-    margin: 20px; 
-  }
-  
-  .experienceContainerStyle p {
-    font-size: 16px;
-    margin: 20px; 
-  }
-  
-  .skillsContainerStyle {
-    width: 90%;
-  }
-  
-  .skillsContainerStyle h6 {
-    font-size: 24px;
-    padding: 30px;
-  }
-  
-  .skillsContainerStyle p {
     font-size: 18px;
     margin: 20px;
   }
-  
-  .educationContainerStyle {
-    width: 400px;
-    border-radius: 40px 5px;
-  }
-  
-  .educationContainerStyle h4 {
-    font-size: 24px;
-  }
-  
-  .educationContainerStyle h5 {
-    font-size: 18px;
-    margin: 20px; 
-  }
-  
-  .educationContainerStyle p {
+
+  .experienceContainerStyle p {
     font-size: 16px;
     margin: 20px;
   }
 
+  .skillsContainerStyle {
+    width: 100%;
+  }
+
+  .skillsContainerStyle h6 {
+    font-size: 24px;
+    padding: 30px;
+  }
+
+  .skillsContainerStyle p {
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  .educationContainerStyle {
+    width: 400px;
+    border-radius: 40px 10px;
+  }
+
+  .educationContainerStyle h4 {
+    font-size: 24px;
+  }
+
+  .educationContainerStyle h5 {
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  .educationContainerStyle p {
+    font-size: 16px;
+    margin: 20px;
+  }
 }
