@@ -10,7 +10,6 @@
   margin: 0 auto;
   padding: 0;
   width: 100%;
-  /* border: 1px solid rgb(73, 71, 71); */
   display: flex;
   flex-wrap: nowrap;
 }
@@ -164,12 +163,6 @@ h3::after {
   padding: 5px 5px 8px 5px;
 }
 
-/* .experienceItem:hover, .experienceItemX:hover {
-  transform: translate(-10px, -10px);
-  transition-duration: 400ms;
-  transition-timing-function: linear;
-} */
-
 .experienceItemX {
   border-radius: 5px 20px;
   width: 49%;
@@ -206,12 +199,6 @@ h4 {
   border-radius: 5px;
   padding: 8px 0;
 }
-
-/* .skillsContainer:hover {
-  transform: translate(-10px, -10px);
-  transition-duration: 400ms;
-  transition-timing-function: linear;
-} */
 
 h5 {
   font-size: 5px;
@@ -269,13 +256,6 @@ h6 {
   width: 25%;
 }
 
-/* .portfoliosItem:hover {
-  transform: translate(-10px, -10px);
-  transition-duration: 400ms;
-  transition-timing-function: linear;
-  background-color: #fff;
-} */
-
 .portfoliosItemPicContainer {
   border-radius: 5px 5px 0 0;
   padding: 2px;
@@ -332,16 +312,6 @@ h6 {
   padding: 5px 5px 8px 5px;
 }
 
-/* .educationItemClone {
-  display: none;
-} */
-
-/* .educationItem:hover {
-  transform: translate(-10px, -10px);
-  transition-duration: 400ms;
-  transition-timing-function: linear;
-} */
-
 .educationTitle {
   background-color: rgb(73, 71, 71);
   border-radius: 50px 15px;
@@ -389,7 +359,6 @@ h6 {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 80%;
@@ -397,7 +366,6 @@ h6 {
   background-color: #ffffff;
   box-shadow: 0 4px 4px rgba(1, 2, 2, 0.2);
   border-radius: 2px;
-  /* padding: 150px; */
 }
 
 .modalImg {
@@ -501,7 +469,6 @@ h6 {
     margin: 0 auto;
     padding: 0;
     width: 796px;
-    /* border: 1px solid rgb(73, 71, 71); */
     display: flex;
     flex-wrap: nowrap;
   }
@@ -755,7 +722,6 @@ h6 {
   .portfoliosItem {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid #fff; */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
     padding-bottom: 10px;
     border-radius: 10px;
@@ -878,7 +844,6 @@ h6 {
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     width: 80%;
@@ -886,7 +851,6 @@ h6 {
     background-color: #ffffff;
     box-shadow: 0 4px 4px rgba(1, 2, 2, 0.2);
     border-radius: 2px;
-    /* padding: 150px; */
   }
 
   .modalImg {
