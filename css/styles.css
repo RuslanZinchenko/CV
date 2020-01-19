@@ -625,9 +625,10 @@ h6 {
 
   .experienceItem:hover,
   .experienceItemX:hover {
-    transform: translate(-10px, -10px);
-    transition-duration: 400ms;
-    transition-timing-function: linear;
+    object-fit: cover;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.03);
+    cursor: zoom-in;
   }
 
   .experienceItemX {
@@ -668,9 +669,10 @@ h6 {
   }
 
   .skillsContainer:hover {
-    transform: translate(-10px, -10px);
-    transition-duration: 400ms;
-    transition-timing-function: linear;
+    object-fit: cover;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.03);
+    cursor: zoom-in;
   }
 
   h5 {
@@ -729,9 +731,10 @@ h6 {
   }
 
   .portfoliosItem:hover {
-    transform: translate(-10px, -10px);
-    transition-duration: 400ms;
-    transition-timing-function: linear;
+    object-fit: cover;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.03);
+    cursor: zoom-in;
     background-color: #fff;
   }
 
@@ -792,9 +795,10 @@ h6 {
   }
 
   .educationItem:hover {
-    transform: translate(-10px, -10px);
-    transition-duration: 400ms;
-    transition-timing-function: linear;
+    object-fit: cover;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.03);
+    cursor: zoom-in;
   }
 
   .educationTitle {
