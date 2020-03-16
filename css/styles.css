@@ -30,6 +30,12 @@
   height: 75px;
   border-radius: 100%;
   border: 3px solid #fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+}
+
+.avatar:hover {
+  border: 5px solid rgb(73, 71, 71);
+  cursor: pointer;
 }
 
 .bold {
@@ -53,6 +59,7 @@ a {
 .contacts {
   color: #fff;
   padding-top: 20px;
+  cursor: pointer;
 }
 
 .contactsTitle {
@@ -227,6 +234,7 @@ h6 {
   color: #fff;
   width: 20%;
   margin-bottom: 10px;
+  margin-right: 10px;
   font-weight: bold;
   font-family: "Tomorrow", sans-serif;
   text-align: center;
