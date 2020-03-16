@@ -36,6 +36,7 @@
 .avatar:hover {
   border: 5px solid rgb(73, 71, 71);
   cursor: pointer;
+  transition-duration: 200ms;
 }
 
 .bold {
