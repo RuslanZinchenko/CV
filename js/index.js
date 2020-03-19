@@ -8,6 +8,8 @@ const firstMainExperience = document.querySelector(".firstMainExperience");
 const secondMainExperience = document.querySelector(".secondMainExperience");
 const thirdMainExperience = document.querySelector(".thirdMainExperience");
 const fourthMainExperience = document.querySelector(".fourthMainExperience");
+const fifthMainExperience = document.querySelector(".fifthMainExperience");
+const sixthMainExperience = document.querySelector(".sixthMainExperience");
 const skillsContainer = document.querySelector(".skillsContainer");
 const firstMainEducation = document.querySelector(".firstMainEducation");
 const secondMainEducation = document.querySelector(".secondMainEducation");
@@ -68,6 +70,14 @@ function choosePicture(target) {
     const clone = fourthMainExperience.cloneNode(true);
     clone.classList.add("experienceContainerStyle");
     modalImg.append(clone);
+  } else if (target.classList.contains("fifthExperience")) {
+    const clone = fifthMainExperience.cloneNode(true);
+    clone.classList.add("experienceContainerStyle");
+    modalImg.append(clone);
+  } else if (target.classList.contains("sixthExperience")) {
+    const clone = sixthMainExperience.cloneNode(true);
+    clone.classList.add("experienceContainerStyle");
+    modalImg.append(clone);
   } else if (target.classList.contains("skillsContainerID")) {
     const clone = skillsContainer.cloneNode(true);
     clone.classList.add("skillsContainerStyle");
@@ -99,6 +109,8 @@ function openModal(e) {
     target.classList.contains("secondExperience") ||
     target.classList.contains("thirdExperience") ||
     target.classList.contains("fourthExperience") ||
+    target.classList.contains("fifthExperience") ||
+    target.classList.contains("sixthExperience") ||
     target.classList.contains("skillsContainerID") ||
     target.classList.contains("firstEducation") ||
     target.classList.contains("secondEducation") ||

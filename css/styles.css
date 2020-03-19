@@ -39,11 +39,21 @@
   transition-duration: 200ms;
 }
 
-.bold {
-  display: flex;
+.bolt {
   font-size: 6px;
   font-weight: bold;
   color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-size: 6px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 10px;
 }
 
 .blue {
@@ -75,6 +85,14 @@ a {
   margin-top: 5px;
 }
 
+.iconsContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
 .iconContainer {
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +104,6 @@ a {
   display: flex;
   width: 20px;
   height: auto;
-  margin-right: 10px;
 }
 
 .content {
@@ -166,15 +183,6 @@ h3::after {
   width: 49%;
   background-color: #fff;
   margin-bottom: 10px;
-  border: 1px solid rgb(73, 71, 71);
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
-  padding: 5px 5px 8px 5px;
-}
-
-.experienceItemX {
-  border-radius: 5px 20px;
-  width: 49%;
-  background-color: #fff;
   border: 1px solid rgb(73, 71, 71);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
   padding: 5px 5px 8px 5px;
@@ -476,54 +484,39 @@ h6 {
 
 @media (min-width: 756px) {
   .container {
-    margin: 0 auto;
-    padding: 0;
     width: 796px;
-    display: flex;
-    flex-wrap: nowrap;
   }
 
   .sidebar {
-    background: rgb(73, 71, 71);
-    width: 32%;
     padding: 20px;
-  }
-
-  .avatarContainer {
-    display: flex;
-    justify-content: center;
   }
 
   .avatar {
     width: 200px;
     height: 200px;
-    border-radius: 100%;
     border: 5px solid #fff;
   }
 
-  .bold {
-    display: flex;
+  .bolt {
     font-size: 14px;
-    font-weight: bold;
-    color: #fff;
+  }
+
+  .bold {
+    font-size: 14px;
+    margin-left: 20px;
   }
 
   .blue {
     display: flex;
     font-size: 14px;
-    font-weight: bold;
   }
 
   .contacts {
-    color: #fff;
     padding-top: 50px;
   }
 
   .contactsTitle {
-    text-transform: uppercase;
     font-size: 22px;
-    font-weight: bold;
-    text-align: center;
   }
 
   .contactsText {
@@ -531,54 +524,22 @@ h6 {
     margin-top: 20px;
   }
 
-  .iconContainer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 12px;
-  }
-
   .icon {
-    display: flex;
     width: 50px;
-    height: auto;
-    margin-right: 20px;
-  }
-
-  a {
-    color: rgb(28, 173, 192);
-    text-decoration: none;
-    display: block;
   }
 
   .content {
-    background: #fff;
     padding: 20px;
-    width: 68%;
   }
 
   h1 {
-    text-align: right;
-    letter-spacing: 4px;
-    font-weight: 600;
-    text-transform: uppercase;
     font-size: 34px;
-    color: rgb(73, 71, 71);
   }
 
   h2 {
     font-size: 26px;
-    font-weight: 400;
-    text-align: right;
     letter-spacing: 3px;
-    color: rgb(73, 71, 71);
     margin-top: 10px;
-  }
-
-  .titleContent {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
   }
 
   .leftSideTitle {
@@ -589,65 +550,31 @@ h6 {
     width: 78%;
   }
 
-  .leftDirection,
-  .rightDirection {
-    width: 50%;
-  }
-
   h2::after {
-    display: block;
     height: 2px;
-    content: "";
-    background: rgb(73, 71, 71);
   }
 
   h3 {
-    text-align: right;
     font-size: 28px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: rgb(73, 71, 71);
     margin: 20px 0 20px 0;
   }
 
   h3::after {
-    display: block;
     height: 2px;
-    content: "";
-    background: rgb(73, 71, 71);
-  }
-
-  .experienceContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .experienceItem {
     border-radius: 15px 50px;
-    width: 49%;
-    background-color: #fff;
     margin-bottom: 20px;
-    border: 1px solid rgb(73, 71, 71);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
     padding: 10px 10px 20px 10px;
   }
 
-  .experienceItem:hover,
-  .experienceItemX:hover {
+  .experienceItem:hover {
     object-fit: cover;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(1.03);
     cursor: zoom-in;
-  }
-
-  .experienceItemX {
-    border-radius: 15px 50px;
-    width: 49%;
-    background-color: #fff;
-    border: 1px solid rgb(73, 71, 71);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
-    padding: 10px 10px 20px 10px;
   }
 
   .experienceTitle {
@@ -663,16 +590,10 @@ h6 {
 
   .experienceText {
     font-size: 14px;
-    color: #000;
     margin: 0 5px 0 10px;
   }
 
-  .experienceColumn {
-    margin-right: -28px;
-  }
-
   .skillsContainer {
-    background-color: rgb(73, 71, 71);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
     border-radius: 15px;
     padding: 15px 0;
@@ -687,57 +608,28 @@ h6 {
 
   h5 {
     font-size: 14px;
-    font-weight: 600;
     margin: 0 5px 5px 10px;
-    color: rgb(73, 71, 71);
   }
 
   h6 {
-    text-align: center;
-    color: #fff;
     font-size: 20px;
-    font-weight: 600;
     margin-bottom: 30px;
-    color: #fff;
-  }
-
-  .skillsBox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
   }
 
   .skillsItem {
     font-size: 14px;
-    color: #fff;
     width: 100px;
     margin-bottom: 30px;
-    font-weight: bold;
-    font-family: "Tomorrow", sans-serif;
-    text-align: center;
   }
 
   .skillsLanguageItem {
     font-size: 14px;
-    color: #fff;
-    font-weight: bold;
-    font-family: "Tomorrow", sans-serif;
-    text-align: center;
-  }
-
-  .portfoliosContainer {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
   }
 
   .portfoliosItem {
-    display: flex;
-    flex-direction: column;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
     padding-bottom: 10px;
     border-radius: 10px;
-    width: 25%;
   }
 
   .portfoliosItem:hover {
@@ -751,37 +643,23 @@ h6 {
   .portfoliosItemPicContainer {
     border-radius: 10px 10px 0 0;
     padding: 5px;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
-      inset 1px 1px 5px rgba(0, 0, 0, 0.5);
   }
 
   .portfoliosItemPic {
-    display: block;
-    width: 100%;
-    height: auto;
     border-radius: 10px 10px 0 0;
   }
 
   .portfoliosItemTitle {
     font-size: 14px;
-    color: rgb(61, 60, 60);
-    font-weight: 600;
     margin-top: 10px;
-    text-align: center;
   }
 
   .portfoliosItemText {
-    color: #000;
     font-size: 14px;
     padding: 10px 5px 0 15px;
   }
 
   .portfoliosItemLinkContainer {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: flex-end;
     margin-top: 10px;
   }
 
@@ -789,17 +667,8 @@ h6 {
     font-size: 12px;
   }
 
-  .educationContainer {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-
   .educationItem {
     border-radius: 50px 15px;
-    width: 33%;
-    background-color: #fff;
-    border: 1px solid rgb(73, 71, 71);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
     padding: 10px 10px 20px 10px;
   }
@@ -812,24 +681,15 @@ h6 {
   }
 
   .educationTitle {
-    background-color: rgb(73, 71, 71);
-    border-radius: 50px 15px;
     padding: 10px 0;
-    text-align: center;
-    color: #fff;
     font-size: 18px;
-    font-weight: 600;
     margin-bottom: 10px;
   }
 
   .educationTitleX {
-    background-color: rgb(73, 71, 71);
     border-radius: 40px 15px;
     padding: 10px 0;
-    text-align: center;
-    color: #fff;
     font-size: 18px;
-    font-weight: 600;
     margin-bottom: 10px;
   }
 
@@ -838,64 +698,26 @@ h6 {
     margin-top: 30px;
   }
 
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(37, 45, 58, 0.7);
-  }
-
-  .modalHidden {
-    display: none;
-  }
-
-  .modalContent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    height: 80%;
-    background-color: #ffffff;
-    box-shadow: 0 4px 4px rgba(1, 2, 2, 0.2);
-    border-radius: 2px;
-  }
-
   .modalImg {
     padding: 60px;
   }
 
   .modalInnerImg {
     width: 50%;
-    height: auto;
   }
 
   .contactsTextBold {
     font-size: 24px;
-    font-weight: 600;
     line-height: 1.5;
   }
 
   .contactsInfo {
     width: 400px;
-    background: rgb(73, 71, 71);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-    padding: 20px 20px 40px;
-  }
-
-  .contactsInfo .iconContainer {
-    margin-top: 20px;
   }
 
   .contactsInfo img {
     width: 60px;
-    height: auto;
   }
 
   .contactsInfo p {
@@ -908,7 +730,6 @@ h6 {
 
   .experienceContainerStyle {
     width: 400px;
-    border-radius: 10px 30px;
   }
 
   .experienceContainerStyle h4 {
